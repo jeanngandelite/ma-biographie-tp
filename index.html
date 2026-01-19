@@ -3,84 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <title>Ma Biographie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #2a7ae2;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1d4e89;
+            border-bottom: 2px solid #1d4e89;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .biographie p strong {
+            width: 150px;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 2px solid #2a7ae2;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .photos img {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            height: auto;
+        }
+
+        .photos .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact {
+            margin-top: 30px;
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-<h1>Biographie personnelle</h1>
+<h1>Bienvenue sur mon site</h1>
+<p>Salut ! Je m'appelle Jean, étudiant à l'UNILU en pré-ESI C. Découvrez ma biographie, mon parcours et contactez-moi facilement.</p>
 
+<div class="biographie">
 <h2>Informations générales</h2>
-
-<p>
-<strong>Nom :</strong> Jean<br>
-<strong>Date de naissance :</strong> 29 octobre 2006<br>
-<strong>Lieu de naissance :</strong> Kinshasa, République Démocratique du Congo<br>
-<strong>Résidence actuelle :</strong> Lubumbashi, République Démocratique du Congo<br>
-<strong>Niveau d’études :</strong> Pré-ESI (Études Supérieures des Ingénieurs Industriels)
-</p>
+<p><strong>Nom :</strong> Jean</p>
+<p><strong>Date de naissance :</strong> 29 octobre 2006</p>
+<p><strong>Lieu de naissance :</strong> Kinshasa</p>
+<p><strong>Études :</strong> UNILU</p>
+<p><strong>Promotion :</strong> Pré ESI C</p>
 
 <h2>Présentation</h2>
-
 <p>
-Je m’appelle Jean. Je suis étudiant en classe préparatoire en
-Études Supérieures des Ingénieurs Industriels (pré-ESI).
-Je poursuis actuellement mes études universitaires dans le but
-d’acquérir une formation scientifique et technique solide.
+Je suis étudiant en classe préparatoire en Études Supérieures des Ingénieurs Industriels. 
+Ce parcours me permet de développer des compétences en sciences, technologie et raisonnement logique, essentielles pour devenir un futur ingénieur industriel.
 </p>
 
 <h2>Parcours académique</h2>
-
 <p>
-J’ai effectué mes études primaires et secondaires en République
-Démocratique du Congo. Après l’obtention de mon diplôme d’État,
-j’ai intégré le cycle préparatoire des Études Supérieures des
-Ingénieurs Industriels (pré-ESI).
+J’ai effectué mes études primaires et secondaires en République Démocratique du Congo. 
+Après l’obtention de mon diplôme d’État, j’ai intégré le cycle préparatoire des Études Supérieures des Ingénieurs Industriels (pré-ESI).
 </p>
+</div>
 
-<p>
-Ce parcours me permet de développer des compétences en sciences,
-en technologie et en raisonnement logique, essentielles à la
-formation d’un futur ingénieur industriel.
-</p>
+<!-- PHOTOS VERTICALES -->
+<h2>Photos</h2>
+<div class="photos">
+    <img src="image1.jpg" alt="Photo 1">
+    <div class="row">
+        <img src="image2.jpg" alt="Photo 2">
+        <img src="image3.jpg" alt="Photo 3">
+    </div>
+    <img src="image4.jpg" alt="Photo 4">
+    <img src="image5.jpg" alt="Photo 5">
+</div>
 
-<h2>Photos de mon parcours</h2>
-
-<h3>À 3 ans</h3>
-<img src="3ans.jpg" width="200">
-
-<h3>À 13 ans</h3>
-<img src="13ans-1.jpg" width="200">
-<img src="13ans-2.jpg" width="200">
-
-<h3>Âge actuel</h3>
-<img src="actuel.jpg" width="200">
-
+<!-- TABLEAU 16 LIGNES × 4 COLONNES -->
 <h2>Tableau récapitulatif</h2>
-
-<table border="1">
+<table>
 <tr>
-<th>Nom</th>
-<th>Âge</th>
-<th>Ville</th>
-<th>Niveau</th>
+<th>N°</th>
+<th>Colonne 1</th>
+<th>Colonne 2</th>
+<th>Colonne 3</th>
+<th>Colonne 4</th>
 </tr>
-
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-<tr><td>Jean</td><td>18</td><td>Lubumbashi</td><td>Pré-ESI</td></tr>
-
+<tr><td>01</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>02</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>03</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>04</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>05</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>06</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>07</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>08</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>09</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>10</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>11</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>12</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>13</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>14</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>15</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>16</td><td></td><td></td><td></td><td></td></tr>
 </table>
 
+<!-- CONTACT -->
+<h2>Contact</h2>
+<div class="contact">
+<p><strong>Téléphone :</strong> +243 83594426</p>
+<p><strong>Email :</strong> jeanngandelite@gmail.com</p>
+</div>
+
 </body>
+</html>
